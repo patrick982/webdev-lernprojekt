@@ -100,32 +100,61 @@
           <a href="mailto:max@dive.at">max@dive.at</a>
         </address>
 
-    <table>
-      <caption>Öffnungszeiten</caption>
-      <thead>
-        <tr>
-          <th scope="col">Wochentag</th>
-          <th scope="col">Uhrzeit</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">Montag–Freitag</th>
-          <td>09:00–18:00</td>
-        </tr>
-        <tr>
-          <th scope="row">Samstag</th>
-          <td>10:00–14:00</td>
-        </tr>
-      </tbody>
-    </table>
+      <table>
+        <caption>Öffnungszeiten</caption>
+        <thead>
+          <tr>
+            <th scope="col">Wochentag</th>
+            <th scope="col">Uhrzeit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Montag–Freitag</th>
+            <td>09:00–18:00</td>
+          </tr>
+          <tr>
+            <th scope="row">Samstag</th>
+            <td>10:00–14:00</td>
+          </tr>
+        </tbody>
+      </table>
 
-      <!-- TODO (Woche 2): Kontaktformular.
-           <form action="#" method="post">, <fieldset>/<legend>,
-           Felder: Name (text, required), E-Mail (email, required),
-           Kurs (<select> + <option>), Nachricht (<textarea>),
-           DSGVO-Checkbox (checkbox, required), Absenden (<button type="submit">).
-           Jedes Feld braucht ein <label for="…"> mit passender id. -->
+      
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Kontaktdaten</legend>
+
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required />
+
+        <label for="email">E-Mail</label>
+        <input id="email" name="email" type="email" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Deine Anfrage</legend>
+
+        <label for="kurs">Kurs</label>
+        <select id="kurs" name="kurs">
+          <option value="open-water">Open Water Diver</option>
+          <option value="advanced">Advanced Open Water</option>
+          <option value="reise">Tauchreise</option>
+        </select>
+
+        <label for="nachricht">Nachricht</label>
+        <textarea id="nachricht" name="nachricht" rows="5"></textarea>
+      </fieldset>
+
+      <label for="dsgvo">
+        <input id="dsgvo" name="dsgvo" type="checkbox" required />
+        Ich habe die Datenschutzerklärung gelesen.
+      </label>
+
+      <button type="submit">Anfrage senden</button>
+    </form>
+
+
     </section>
 
   </main>
