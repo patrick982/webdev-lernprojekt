@@ -1,93 +1,50 @@
-# Woche 1 — Setup, Git & erste HTML-Seite
+# Deep Blue Tauchschule — Webdev-Lernprojekt
 
-Willkommen in Woche 1. Ziel: Deine Werkzeuge stehen, du verstehst grob, wie das
-Web funktioniert, und du hast deine **erste eigene Seite** gebaut und versioniert.
+Ein einziges Projekt, das über **12 Wochen** wächst: aus nacktem HTML wird eine
+fertige Firmenseite — erst statisch (HTML/CSS/JS), dann modern (Tailwind/Astro),
+dann WordPress. So siehst du jede Woche echten Fortschritt.
 
-**Lernprojekt:** eine (fiktive) Tauchschule-Website `Deep Blue Tauchschule`.
-Sie wächst über die 12 Wochen von nacktem HTML bis zur fertigen WordPress-Seite.
+Die fiktive Firma: **Deep Blue Tauchschule** (Graz). Inhalte sind frei erfunden.
 
-**Zeit diese Woche:** ~3–4 h/Tag × 4 Tage ≈ 13–15 h.
+Begleitplan: [`../Webdevelopment-Lernplan.md`](../Webdevelopment-Lernplan.md)
+(12-Wochen-Roadmap, Lernorte, Business-Teil).
 
 ---
 
-## Tag 1 — Werkzeuge installieren
+## Wochen
 
-- [ ] **Editor:** VS Code — https://code.visualstudio.com
-      Extensions: *Live Server*, *Prettier*, *HTML CSS Support*
-- [ ] **Browser:** aktuelle Version Chrome oder Firefox (mit **DevTools** — F12)
-- [ ] **Git** installieren — https://git-scm.com/downloads
-- [ ] Prüfen im Terminal:
-      ```bash
-      git --version
-      code --version
-      ```
+- [x] [Woche 1 — Setup, Git & erste HTML-Seite](docs/woche-01-setup.md)
+- [ ] [Woche 2 — HTML vertiefen (Semantik, Tabellen, Formulare, Bilder, A11y)](docs/woche-02-html.md)
+- [ ] Woche 3 — CSS I (Box-Modell, Selektoren, Flexbox)
+- [ ] Woche 4 — CSS II (Grid, Responsive, Design)
+- [ ] Woche 5 — JavaScript I (DOM, Events, fetch)
+- [ ] Woche 6 — Git/GitHub + Tailwind CSS
+- [ ] Woche 7 — Astro (mehrseitige Seite, Deployment)
+- [ ] Woche 8 — WordPress-Grundlagen
+- [ ] Woche 9 — Theme + Page-Builder (Bricks/Elementor)
+- [ ] Woche 10 — Betrieb: Performance, Security, Hosting, Recht
+- [ ] Woche 11 — SEO, Performance, Accessibility, Analytics
+- [ ] Woche 12 — Portfolio & erste „Kunden"
 
-## Tag 2 — Wie das Web funktioniert + Git-Basics
+## Projektstruktur
 
-Lernen (ca. 1,5–2 h):
-- MDN „How the web works": https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works
-- Git-Buch Kapitel 1–2: https://git-scm.com/book/de/v2
-- GitHub Skills (Intro): https://skills.github.com
-
-Verstehen:
-- Was passiert, wenn du eine URL aufrufst (DNS → Server → HTML → Browser rendert)
-- Client vs. Server, statische Seite, Datei `index.html` als Einstieg
-- Git: `init`, `add`, `commit`, `status`, `log`; Was ist ein Repository?
-
-Praxis — Projekt in Git aufsetzen (im Ordner `webdev-lernprojekt`):
-```bash
-git init
-git add .
-git commit -m "Woche 1: Projektstart"
-git log --oneline
 ```
-- [ ] Repo angelegt, erster Commit gemacht, `git log` zeigt ihn
+webdev-lernprojekt/
+├── index.html            # Startseite (wächst jede Woche)
+├── css/styles.css        # Basis-Styles (Woche 1), richtig ab Woche 3
+├── img/                  # Bilder (ab Woche 2)
+├── docs/                 # Wochen-Guides (Anleitung + Aufgaben)
+└── README.md             # diese Übersicht
+```
 
-## Tag 3 — DevTools & Dateistruktur
+## So arbeiten wir
+1. Wochen-Guide in `docs/` lesen (Lernquellen + Aufgaben).
+2. Aufgaben im Projekt umsetzen — **du** schreibst den Code, nicht die KI.
+3. Bei Fragen: fragen. Bei Fehlern: DevTools (F12) nutzen.
+4. Am Ende der Woche: Deliverable prüfen (Checklist im Guide) und committen.
 
-Lernen:
-- Chrome DevTools: Elemente inspizieren, Styles live ändern (Elements-Tab), Console
-- MDN „Getting started with HTML": https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics
-
-Aufgabe:
-- [ ] Öffne eine beliebige Website, inspiziere per F12 das Layout
-- [ ] Ändere in DevTools live eine Farbe/Text (Verständnis, kein Speichern)
-- [ ] Lege die Ordnerstruktur an:
-      ```
-      webdev-lernprojekt/
-      ├── index.html
-      ├── css/styles.css
-      ├── img/           (leer, kommt später)
-      └── README.md
-      ```
-
-## Tag 4 — Erste Seite: HTML-Struktur bauen
-
-Datei `index.html` ist vorgegeben (Skelett) — **du füllst die TODOs**:
-- [ ] Titel & Meta anpassen
-- [ ] Die `TODO`-Kommentare durch echten Inhalt ersetzen
-- [ ] Semantische Tags nutzen: `<header> <nav> <main> <section> <footer>`
-- [ ] Navigation als Anker-Links zu den Abschnitten (`#kurse`, `#kontakt` …)
-- [ ] Mit **Live Server** öffnen (Rechtsklick → „Open with Live Server")
-
-CSS:
-- [ ] `css/styles.css` einbinden (per `<link>` im `<head>`)
-- [ ] Nur die Basis ist drin — für Woche 1 reicht: lesbar, sauber, ein paar Farben
-
----
-
-## Fertig, wenn …
-- [ ] VS Code, Git, Browser+DevTools laufen
-- [ ] Repo mit mind. 2 Commits (`git log` zeigt sie)
-- [ ] `index.html` ist semantisch strukturiert, Inhalte statt TODOs
-- [ ] Seite läuft über Live Server und ist im Browser ok
-- [ ] Du in 2 Sätzen erklären kannst: Was macht HTML? Was macht CSS?
-- [ ] Du erklären kannst: Was ist ein Commit, was ein Repository?
-
-## Ressourcen Woche 1
-- MDN – HTML-Grundlagen · Git-Buch (de) · GitHub Skills
-- Kevin Powell (YouTube) – „HTML & CSS for beginners"
-- freeCodeCamp – „Responsive Web Design" (Anfang)
-
-## Tipp
-Nicht perfekt machen — **fertig** machen. Design kommt in Woche 3–4 richtig.
+## Definition of Done (jede Woche)
+- [ ] Thema durchgearbeitet (Quelle im Guide)
+- [ ] Ein Deliverable gebaut
+- [ ] Kann ich es in 2 Sätzen erklären?
+- [ ] Nächste Woche geplant

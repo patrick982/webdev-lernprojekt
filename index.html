@@ -19,6 +19,7 @@
       <ul>
         <li><a href="#kurse">Kurse</a></li>
         <li><a href="#ueber">Über uns</a></li>
+        <!-- TODO (Woche 2): <li><a href="#team">Team</a></li> ergänzen -->
         <li><a href="#kontakt">Kontakt</a></li>
       </ul>
     </nav>
@@ -56,12 +57,34 @@
     <section class="ueber" id="ueber">
       <h2>Über uns</h2>
       <p>Max Mustermann - Founder, CEO, Tauchlehrer und Taucher aus Leidenschaft</p>
+      <!-- TODO (Woche 2): <address> für Kontaktangaben; <time datetime> für Öffnungszeiten -->
     </section>
+
+    <!-- ============ TEAM (Woche 2) ============ -->
+    <!-- TODO (Woche 2): Team-Sektion.
+         Pro Person ein <article> mit <figure><img ...><figcaption>…</figcaption></figure>.
+         Bilder in img/ ablegen; alt-Text, width/height, ggf. loading="lazy". -->
 
     <!-- ============ KONTAKT ============ -->
     <section class="kontakt" id="kontakt">
       <h2>Kontakt & Öffnungszeiten</h2>
-      <p>Lange Gasse 123, +123 456 789, max@dive.at, Mo - So: 12:00 - 16:00</p>
+        <address>
+          Deep Blue Tauchschule<br />
+          Lange Gasse 123<br />
+          8010 Graz<br />
+          <a href="tel:+43123456789">+123 456 789</a><br />
+          <a href="mailto:max@dive.at">max@dive.at</a>
+        </address>
+
+      <!-- TODO (Woche 2): Öffnungszeiten als <table>.
+           <caption>, <thead>/<tbody>, <th scope="col"> — Tag/Wochentag + Uhrzeit. -->
+
+      <!-- TODO (Woche 2): Kontaktformular.
+           <form action="#" method="post">, <fieldset>/<legend>,
+           Felder: Name (text, required), E-Mail (email, required),
+           Kurs (<select> + <option>), Nachricht (<textarea>),
+           DSGVO-Checkbox (checkbox, required), Absenden (<button type="submit">).
+           Jedes Feld braucht ein <label for="…"> mit passender id. -->
     </section>
 
   </main>
@@ -69,6 +92,7 @@
   <!-- ============ FOOTER ============ -->
   <footer class="site-footer">
     <p>&copy; <span id="jahr"></span> Deep Blue Tauchschule (fiktives Lernprojekt).</p>
+    <!-- TODO (Woche 2): Links auf Impressum & Datenschutz (Platzhalter-Seiten oder #) -->
   </footer>
 
   <!-- Optional: kleines Skript, das das Jahr im Footer setzt -->
