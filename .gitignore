@@ -1,0 +1,14 @@
+# Betriebssystem-Kram
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Node (kommt später, wenn wir Astro/npm nutzen)
+node_modules/
+dist/
+
+# WordPress (kommt später)
+wp-config.php

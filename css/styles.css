@@ -1,0 +1,50 @@
+/* ============================================================
+   Deep Blue Tauchschule – Basis-Styles (Woche 1)
+   Nur das Nötigste. Richtiges Design/Flexbox/Grid folgt in Woche 3–4.
+   ============================================================ */
+
+/* Farben & Abstände zentral definieren (später leicht änderbar) */
+:root {
+  --farbe-primaer: #0b6e99;   /* TODO: nach Geschmack */
+  --farbe-text: #1a1a1a;
+  --farbe-hg: #f7fbff;
+  --max-breite: 1000px;
+  --abstand: 1.5rem;
+}
+
+/* Ein einfacher Reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--farbe-text);
+  background: var(--farbe-hg);
+  line-height: 1.6;
+  /* TODO (Woche 3): Inhalt zentrieren mit max-width + auto-margin */
+}
+
+/* Alle Sektionen bekommen erst mal etwas Abstand */
+section, header, footer {
+  padding: var(--abstand);
+}
+
+/* Überschriften */
+h1 { font-size: 2rem; line-height: 1.2; }
+h2 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+
+/* Links */
+a { color: var(--farbe-primaer); }
+
+/* --- Diese Teile bauen wir ab Woche 3 richtig aus: --- */
+
+/* TODO (Woche 3): .site-header, .site-nav ul, .hero, .card,
+   .site-footer gestalten – mit Flexbox. Noch bewusst nackt. */
+
+/* Basis für Karten, damit sie überhaupt sichtbar sind */
+.card {
+  border: 1px solid #d9e6f2;
+  border-radius: 8px;
+  padding: var(--abstand);
+  margin-block: 1rem;
+  background: #fff;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deep Blue Tauchschule</title>
+  <meta name="description" content="Die Deep Blue Tauchschule bietet Tauchinfos, Tauchkurse, Tauchreisen, based in Austria" />
+
+  <!-- CSS einbinden -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER + NAVIGATION ============ -->
+  <header class="site-header">
+    <a class="brand" href="#">Deep Blue Tauchschule</a>
+
+    <nav class="site-nav" aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="#kurse">Kurse</a></li>
+        <li><a href="#ueber">Über uns</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO / EINSTIEG ============ -->
+    <section class="hero" id="start">
+      <h1>Tauchen lernen in Graz</h1>
+      <p>
+          Die Deep Blue Tauchschule bietet Tauchinfos, Tauchkurse, Tauchreisen, based in Austria
+      </p>
+      <a class="btn" href="#kurse">Kurse ansehen</a>
+    </section>
+
+    <!-- ============ KURSE ============ -->
+    <section class="kurse" id="kurse">
+      <h2>Unsere Kurse</h2>
+      <article class="card">
+        <h3>Open Water Diver</h3>
+        <p>Der Einstieg ins Tauchen – Theorie, Pool und Freiwasser. Ab 399 €</p>
+      </article>
+      <article class="card">
+        <h3>Advanced Open Water</h3>
+        <p>Mehr Tiefe, Navigation und Nachttauchgänge. Ab 299 €</p>
+      </article>
+      <article class="card">
+        <h3>Tauchreisen</h3>
+        <p>Ausfahrten an den See und Reisen ans Meer. Ab 99 €</p>
+      </article>
+    </section>
+
+    <!-- ============ ÜBER UNS ============ -->
+    <section class="ueber" id="ueber">
+      <h2>Über uns</h2>
+      <p>Max Mustermann - Founder, CEO, Tauchlehrer und Taucher aus Leidenschaft</p>
+    </section>
+
+    <!-- ============ KONTAKT ============ -->
+    <section class="kontakt" id="kontakt">
+      <h2>Kontakt & Öffnungszeiten</h2>
+      <p>Lange Gasse 123, +123 456 789, max@dive.at, Mo - So: 12:00 - 16:00</p>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <p>&copy; <span id="jahr"></span> Deep Blue Tauchschule (fiktives Lernprojekt).</p>
+  </footer>
+
+  <!-- Optional: kleines Skript, das das Jahr im Footer setzt -->
+  <script>
+    document.getElementById("jahr").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
