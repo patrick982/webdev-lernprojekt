@@ -4,165 +4,200 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Deep Blue Tauchschule</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <meta name="description" content="Die Deep Blue Tauchschule bietet Tauchinfos, Tauchkurse, Tauchreisen, based in Austria" />
-
-  <!-- CSS einbinden -->
-  <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
 
   <!-- ============ HEADER + NAVIGATION ============ -->
-  <header class="site-header">
-    <a class="brand" href="#">Deep Blue Tauchschule</a>
-
-    <nav class="site-nav" aria-label="Hauptnavigation">
-      <ul>
-        <li><a href="#ueber">Über uns</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
-      </ul>
-    </nav>
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+      <a class="text-xl font-bold text-blue-900" href="#">Deep Blue Tauchschule</a>
+      <nav aria-label="Hauptnavigation">
+        <ul class="flex gap-6 list-none">
+          <li><a class="text-slate-700 hover:text-blue-600 font-medium" href="#ueber">Über uns</a></li>
+          <li><a class="text-slate-700 hover:text-blue-600 font-medium" href="#team">Team</a></li>
+          <li><a class="text-slate-700 hover:text-blue-600 font-medium" href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
 
     <!-- ============ HERO / EINSTIEG ============ -->
-    <section class="hero" id="start">
-      <h1>Tauchen lernen in Graz</h1>
-      <p>
+<section class="bg-blue-900 text-white p-8 text-center rounded-2xl my-6" id="start">
+<h1 class="text-4xl md:text-6xl font-bold">Tauchen lernen in Graz</h1>
+      <p class="mt-4 text-lg text-blue-100 max-w-2xl mx-auto">
           Die Deep Blue Tauchschule bietet Tauchinfos, Tauchkurse, Tauchreisen, based in Austria
       </p>
-      <a class="btn" href="#kurse">Kurse ansehen</a>
+      <a class="inline-block mt-6 bg-teal-500 hover:bg-teal-400 text-white font-semibold px-6 py-3 rounded-xl transition" href="#kurse">Kurse ansehen</a>
     </section>
 
     <!-- ============ KURSE ============ -->
-    <section class="kurse" id="kurse">
-      <h2>Unsere Kurse</h2>
-      <article class="card">
-        <h3>Open Water Diver</h3>
-        <p>Der Einstieg ins Tauchen – Theorie, Pool und Freiwasser. Ab 399 €</p>
-      </article>
-      <article class="card">
-        <h3>Advanced Open Water</h3>
-        <p>Mehr Tiefe, Navigation und Nachttauchgänge. Ab 299 €</p>
-      </article>
-      <article class="card">
-        <h3>Tauchreisen</h3>
-        <p>Ausfahrten an den See und Reisen ans Meer. Ab 99 €</p>
-      </article>
+    <section class="max-w-6xl mx-auto px-4 py-16" id="kurse">
+      <h2 class="text-3xl font-bold text-slate-900 text-center mb-10">Unsere Kurse</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <article class="bg-white rounded-2xl shadow-md border border-slate-100 hover:shadow-xl transition p-6">
+          <h3 class="text-xl font-semibold text-blue-900">Open Water Diver</h3>
+          <p class="mt-2 text-slate-600">Der Einstieg ins Tauchen – Theorie, Pool und Freiwasser. Ab 399 €</p>
+        </article>
+        <article class="bg-white rounded-2xl shadow-md border border-slate-100 hover:shadow-xl transition p-6">
+          <h3 class="text-xl font-semibold text-blue-900">Advanced Open Water</h3>
+          <p class="mt-2 text-slate-600">Mehr Tiefe, Navigation und Nachttauchgänge. Ab 299 €</p>
+        </article>
+        <article class="bg-white rounded-2xl shadow-md border border-slate-100 hover:shadow-xl transition p-6">
+          <h3 class="text-xl font-semibold text-blue-900">Tauchreisen</h3>
+          <p class="mt-2 text-slate-600">Ausfahrten an den See und Reisen ans Meer. Ab 99 €</p>
+        </article>
+      </div>
     </section>
 
     <!-- ============ ÜBER UNS ============ -->
-    <section class="ueber" id="ueber">
-      <h2>Über uns</h2>
-      <p>Max Mustermann - Founder, CEO, Tauchlehrer und Taucher aus Leidenschaft</p>
+    <section class="max-w-3xl mx-auto px-4 py-16 text-center" id="ueber">
+      <h2 class="text-3xl font-bold text-slate-900">Über uns</h2>
+      <p class="mt-4 text-lg text-slate-600">
+        Max Mustermann – Founder, CEO, Tauchlehrer und Taucher aus Leidenschaft.
+      </p>
     </section>
 
-    <!-- ============ TEAM (Woche 2) ============ -->
-    <section class="team" id="team">
-      <h2>Unser Team</h2>
+    <!-- ============ TEAM ============ -->
+    <section class="max-w-6xl mx-auto px-4 py-16" id="team">
+      <h2 class="text-3xl font-bold text-slate-900 text-center mb-10">Unser Team</h2>
 
-      <article>
-        <figure>
-          <img src="img/max.jpg" alt="Max Mustermann, Tauchlehrer" width="600" height="400" loading="lazy" />
-          <figcaption>Max Mustermann — Tauchlehrer &amp; Gründer</figcaption>
-        </figure>
-        <p>Kurzbeschreibung … lorem ipsum</p>
-      </article>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <article class="text-center">
+          <figure>
+            <img src="img/max.jpg" alt="Max Mustermann, Tauchlehrer" width="600" height="400" loading="lazy"
+                class="w-40 h-40 mx-auto rounded-full object-cover shadow-md" />
+            <figcaption class="mt-4 font-semibold text-slate-900">Max Mustermann — Tauchlehrer &amp; Gründer</figcaption>
+          </figure>
+          <p class="mt-2 text-slate-600">Kurzbeschreibung … lorem ipsum</p>
+        </article>
 
-      <article>
-        <figure>
-          <img src="img/max.jpg" alt="Mat Mustermann, Tauchlehrer" width="600" height="400" loading="lazy" />
-          <figcaption>Mat Mustermann — Tauchlehrer</figcaption>
-        </figure>
-        <p>Kurzbeschreibung … lorem ipsum</p>
-      </article>
+        <article class="text-center">
+          <figure>
+            <img src="img/max.jpg" alt="Mat Mustermann, Tauchlehrer" width="600" height="400" loading="lazy"
+                class="w-40 h-40 mx-auto rounded-full object-cover shadow-md" />
+            <figcaption class="mt-4 font-semibold text-slate-900">Mat Mustermann — Tauchlehrer</figcaption>
+          </figure>
+          <p class="mt-2 text-slate-600">Kurzbeschreibung … lorem ipsum</p>
+        </article>
 
-      <article>
-        <figure>
-          <img src="img/max.jpg" alt="Tuck Mustermann, Tauchlehrer" width="600" height="400" loading="lazy" />
-          <figcaption>Tuck Mustermann — Divemaster</figcaption>
-        </figure>
-        <p>Kurzbeschreibung … lorem ipsum</p>
-      </article>
+        <article class="text-center">
+          <figure>
+            <img src="img/max.jpg" alt="Tuck Mustermann, Tauchlehrer" width="600" height="400" loading="lazy"
+                class="w-40 h-40 mx-auto rounded-full object-cover shadow-md" />
+            <figcaption class="mt-4 font-semibold text-slate-900">Tuck Mustermann — Divemaster</figcaption>
+          </figure>
+          <p class="mt-2 text-slate-600">Kurzbeschreibung … lorem ipsum</p>
+        </article>
+      </div>
     </section>
     
-    <!-- ============ KONTAKT ============ -->
-    <section class="kontakt" id="kontakt">
-      <h2>Kontakt & Öffnungszeiten</h2>
-        <address>
-          Deep Blue Tauchschule<br />
-          Lange Gasse 123<br />
-          8010 Graz<br />
-          <a href="tel:+43123456789">+123 456 789</a><br />
-          <a href="mailto:max@dive.at">max@dive.at</a>
-        </address>
+ <!-- ============ KONTAKT ============ -->
+    <section class="max-w-6xl mx-auto px-4 py-16" id="kontakt">
+      <h2 class="text-3xl font-bold text-slate-900 text-center mb-10">Kontakt &amp; Öffnungszeiten</h2>
 
-      <table>
-        <caption>Öffnungszeiten</caption>
-        <thead>
-          <tr>
-            <th scope="col">Wochentag</th>
-            <th scope="col">Uhrzeit</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Montag–Freitag</th>
-            <td>09:00–18:00</td>
-          </tr>
-          <tr>
-            <th scope="row">Samstag</th>
-            <td>10:00–14:00</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="space-y-8">
+          <div class="bg-white rounded-2xl shadow-md border border-slate-100 p-6">
+            <h3 class="text-xl font-semibold text-blue-900 mb-3">So erreichst du uns</h3>
+            <address class="not-italic text-slate-600 leading-relaxed">
+              Deep Blue Tauchschule<br />
+              Lange Gasse 123<br />
+              8010 Graz<br />
+              <a class="text-blue-600 hover:underline" href="tel:+43123456789">+43 123 456 789</a><br />
+              <a class="text-blue-600 hover:underline" href="mailto:max@dive.at">max@dive.at</a>
+            </address>
+          </div>
 
-      
-    <form action="#" method="post">
-      <fieldset>
-        <legend>Kontaktdaten</legend>
+          <div class="bg-white rounded-2xl shadow-md border border-slate-100 p-6 overflow-hidden">
+            <table class="w-full text-left border-collapse">
+              <caption class="text-xl font-semibold text-blue-900 mb-3 text-left">Öffnungszeiten</caption>
+              <thead>
+                <tr class="border-b border-slate-200">
+                  <th scope="col" class="py-3 font-semibold text-slate-900">Wochentag</th>
+                  <th scope="col" class="py-3 font-semibold text-slate-900">Uhrzeit</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="even:bg-slate-50">
+                  <th scope="row" class="py-3 font-medium text-slate-700">Montag–Freitag</th>
+                  <td class="py-3 text-slate-600">09:00–18:00</td>
+                </tr>
+                <tr class="even:bg-slate-50 border-t border-slate-100">
+                  <th scope="row" class="py-3 font-medium text-slate-700">Samstag</th>
+                  <td class="py-3 text-slate-600">10:00–14:00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
 
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" required />
+        <form action="#" method="post" class="bg-white rounded-2xl shadow-md border border-slate-100 p-6 space-y-6">
+          <fieldset class="space-y-4">
+            <legend class="text-xl font-semibold text-blue-900 mb-2">Kontaktdaten</legend>
 
-        <label for="email">E-Mail</label>
-        <input id="email" name="email" type="email" required />
-      </fieldset>
+            <div>
+              <label for="name" class="block text-sm font-medium text-slate-700 mb-1">Name</label>
+              <input id="name" name="name" type="text" required
+                     class="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none" />
+            </div>
 
-      <fieldset>
-        <legend>Deine Anfrage</legend>
+            <div>
+              <label for="email" class="block text-sm font-medium text-slate-700 mb-1">E-Mail</label>
+              <input id="email" name="email" type="email" required
+                     class="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none" />
+            </div>
+          </fieldset>
 
-        <label for="kurs">Kurs</label>
-        <select id="kurs" name="kurs">
-          <option value="open-water">Open Water Diver</option>
-          <option value="advanced">Advanced Open Water</option>
-          <option value="reise">Tauchreise</option>
-        </select>
+          <fieldset class="space-y-4">
+            <legend class="text-xl font-semibold text-blue-900 mb-2">Deine Anfrage</legend>
 
-        <label for="nachricht">Nachricht</label>
-        <textarea id="nachricht" name="nachricht" rows="5"></textarea>
-      </fieldset>
+            <div>
+              <label for="kurs" class="block text-sm font-medium text-slate-700 mb-1">Kurs</label>
+              <select id="kurs" name="kurs"
+                      class="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none">
+                <option value="open-water">Open Water Diver</option>
+                <option value="advanced">Advanced Open Water</option>
+                <option value="reise">Tauchreise</option>
+              </select>
+            </div>
 
-      <label for="dsgvo">
-        <input id="dsgvo" name="dsgvo" type="checkbox" required />
-        Ich habe die Datenschutzerklärung gelesen.
-      </label>
+            <div>
+              <label for="nachricht" class="block text-sm font-medium text-slate-700 mb-1">Nachricht</label>
+              <textarea id="nachricht" name="nachricht" rows="5"
+                        class="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"></textarea>
+            </div>
+          </fieldset>
 
-      <button type="submit">Anfrage senden</button>
-    </form>
+          <label for="dsgvo" class="flex items-center gap-2 text-sm text-slate-600">
+            <input id="dsgvo" name="dsgvo" type="checkbox" required class="rounded border-slate-300" />
+            Ich habe die Datenschutzerklärung gelesen.
+          </label>
 
-
+          <button type="submit"
+                  class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl transition">
+            Anfrage senden
+          </button>
+        </form>
+      </div>
     </section>
 
   </main>
 
   <!-- ============ FOOTER ============ -->
-  <footer class="site-footer">
-    <p>&copy; <span id="jahr"></span> Deep Blue Tauchschule (fiktives Lernprojekt).</p>
-    <a href="#impressum">Impressum</a>
-    <a href="#datenschutz">Datenschutz</a>
-   <!-- TODO (Woche 2): Links auf Impressum & Datenschutz (Platzhalter-Seiten oder #) -->
+  <footer class="bg-slate-900 text-slate-400 py-8 mt-10">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>&copy; <span id="jahr"></span> Deep Blue Tauchschule (fiktives Lernprojekt).</p>
+      <nav class="flex gap-4" aria-label="Rechtliches">
+        <a class="hover:text-white transition" href="#impressum">Impressum</a>
+        <a class="hover:text-white transition" href="#datenschutz">Datenschutz</a>
+      </nav>
+    </div>
   </footer>
 
   <!-- Optional: kleines Skript, das das Jahr im Footer setzt -->
