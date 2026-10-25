@@ -14,11 +14,11 @@ Begleitplan: [`../Webdevelopment-Lernplan.md`](../Webdevelopment-Lernplan.md)
 ## Wochen
 
 - [x] [Woche 1 — Setup, Git & erste HTML-Seite](docs/woche-01-setup.md)
-- [ ] [Woche 2 — HTML vertiefen (Semantik, Tabellen, Formulare, Bilder, A11y)](docs/woche-02-html.md)
-- [ ] Woche 3 — CSS I (Box-Modell, Selektoren, Flexbox)
+- [x] [Woche 2 — HTML vertiefen (Semantik, Tabellen, Formulare, Bilder, A11y)](docs/woche-02-html.md)
+- [x] [Woche 3 — Tailwind CSS: modernes Styling](docs/woche-03-tailwind.md)
 - [ ] Woche 4 — CSS II (Grid, Responsive, Design)
 - [ ] Woche 5 — JavaScript I (DOM, Events, fetch)
-- [ ] Woche 6 — Git/GitHub + Tailwind CSS
+- [ ] Woche 6 — JavaScript II / Git & GitHub vertiefen
 - [ ] Woche 7 — Astro (mehrseitige Seite, Deployment)
 - [ ] Woche 8 — WordPress-Grundlagen
 - [ ] Woche 9 — Theme + Page-Builder (Bricks/Elementor)
@@ -31,7 +31,7 @@ Begleitplan: [`../Webdevelopment-Lernplan.md`](../Webdevelopment-Lernplan.md)
 ```
 webdev-lernprojekt/
 ├── index.html            # Startseite (wächst jede Woche)
-├── css/styles.css        # Basis-Styles (Woche 1), richtig ab Woche 3
+├── css/styles.css        # Basis-Styles (Woche 1), ab Woche 3 durch Tailwind ersetzt
 ├── img/                  # Bilder (ab Woche 2)
 ├── docs/                 # Wochen-Guides (Anleitung + Aufgaben)
 └── README.md             # diese Übersicht
