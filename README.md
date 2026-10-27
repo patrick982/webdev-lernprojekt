@@ -16,8 +16,8 @@ Begleitplan: [`../Webdevelopment-Lernplan.md`](../Webdevelopment-Lernplan.md)
 - [x] [Woche 1 — Setup, Git & erste HTML-Seite](docs/woche-01-setup.md)
 - [x] [Woche 2 — HTML vertiefen (Semantik, Tabellen, Formulare, Bilder, A11y)](docs/woche-02-html.md)
 - [x] [Woche 3 — Tailwind CSS: modernes Styling](docs/woche-03-tailwind.md)
-- [ ] [Woche 4 — CSS II: Layout verstehen & Design-Feinschliff](docs/woche-04-css-layout.md)
-- [ ] Woche 5 — JavaScript I (DOM, Events, fetch)
+- [x] [Woche 4 — CSS II: Layout verstehen & Design-Feinschliff](docs/woche-04-css-layout.md)
+- [ ] [Woche 5 — JavaScript I: DOM, Events & Fetch](docs/woche-05-javascript.md)
 - [ ] Woche 6 — JavaScript II / Git & GitHub vertiefen
 - [ ] Woche 7 — Astro (mehrseitige Seite, Deployment)
 - [ ] Woche 8 — WordPress-Grundlagen

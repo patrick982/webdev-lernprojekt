@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" class="scroll-pt-32">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,7 +14,14 @@
   <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between p-4 gap-4">
       <a class="text-xl font-bold text-blue-900" href="#">Deep Blue Tauchschule</a>
-      <nav aria-label="Hauptnavigation">
+      <button id="menu-btn" type="button"
+        class="md:hidden text-2xl text-slate-700 p-2 rounded-lg hover:text-blue-600"
+        aria-label="Menü öffnen"
+        aria-expanded="false"
+        aria-controls="hauptmenue">
+        ☰
+      </button>
+      <nav id="hauptmenue" aria-label="Hauptnavigation" class="hidden md:block">
         <ul class="flex flex-col md:flex-row gap-4 md:gap-6 list-none">
           <li><a class="text-slate-700 hover:text-blue-600 font-medium" href="#ueber">Über uns</a></li>
           <li><a class="text-slate-700 hover:text-blue-600 font-medium" href="#team">Team</a></li>
@@ -86,9 +93,10 @@
     <section class="max-w-3xl mx-auto px-4 py-20 text-center" id="ueber">
       <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Über uns</h2>
       <div class="w-20 h-1 bg-teal-500 mx-auto mb-8 rounded-full"></div>
-      <p class="mt-4 text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
+      <p class="mt-4 text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto hidden" id="ueber-text">
         Max Mustermann – Founder, CEO, Tauchlehrer und Taucher aus Leidenschaft. Seit über 15 Jahren vermitteln wir Sicherheit, Fachwissen und die Faszination unter Wasser in Graz und Umgebung.
       </p>
+      <button id="toggle-btn" class="text-blue-600 font-bold underline">Mehr lesen</button>
     </section>
 
     <!-- ============ TEAM ============ -->
@@ -252,5 +260,7 @@
   <script>
     document.getElementById("jahr").textContent = new Date().getFullYear();
   </script>
+  <script src="js/main.js"></script>
+
 </body>
 </html>
