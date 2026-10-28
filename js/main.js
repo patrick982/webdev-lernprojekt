@@ -38,3 +38,31 @@ document.querySelectorAll("#hauptmenue a").forEach((link) => {
 
     });
 });
+
+// Kontakt form
+const kontaktForm = document.querySelector("#kontakt-form");
+const formHinweis = document.querySelector("#form-hinweis");
+
+kontaktForm.addEventListener("submit", (e) => {
+    // 1. Verhindern, dass die Seite neu lädt
+    e.preventDefault();
+
+    // 2. Hinweis anzeigen (Klasse "hidden" entfernen)
+    formHinweis.classList.remove("hidden");
+
+    // 3. Formularfelder leeren (optional, aber sauber)
+    kontaktForm.reset();
+});
+
+// Kursdaten per fetch laden
+fetch("daten.json")
+  .then((res) => res.json())
+  .then((daten) => {
+    document.querySelectorAll("#kurse article").forEach((kurs, i) => {
+      if (!daten.kurse[i]) return;
+      kurs.querySelector("h3").textContent    = daten.kurse[i].name;
+      kurs.querySelector("span.text-2xl").textContent = daten.kurse[i].preis;
+      kurs.querySelector("p").textContent     = daten.kurse[i].text;
+    });
+  })
+  .catch((err) => console.error("Fehler beim Laden:", err));

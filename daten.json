@@ -1,0 +1,7 @@
+{
+  "kurse": [
+    { "name": "Open Water Diver", "preis": "ab 399 €", "text": "Der Einstieg ins Tauchen – Theorie, Pool und Freiwasser." },
+    { "name": "Advanced Open Water", "preis": "ab 299 €", "text": "Mehr Tiefe, Navigation, Nachttauchgang." },
+    { "name": "Tauchreisen", "preis": "ab 109 €", "text": "Ausfahrten an Seen, Reisen ans Meer." }
+  ]
+}
