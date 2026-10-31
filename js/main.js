@@ -66,3 +66,12 @@ fetch("daten.json")
     });
   })
   .catch((err) => console.error("Fehler beim Laden:", err));
+
+  // Menü mit ESC-Taste schließen
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+        menuText.classList.add("hidden");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Menü öffnen");
+    }
+});
