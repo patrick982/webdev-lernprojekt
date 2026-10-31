@@ -18,7 +18,8 @@ Begleitplan: [`../Webdevelopment-Lernplan.md`](../Webdevelopment-Lernplan.md)
 - [x] [Woche 3 — Tailwind CSS: modernes Styling](docs/woche-03-tailwind.md)
 - [x] [Woche 4 — CSS II: Layout verstehen & Design-Feinschliff](docs/woche-04-css-layout.md)
 - [x] [Woche 5 — JavaScript I: DOM, Events & Fetch](docs/woche-05-javascript.md)
-- [ ] Woche 6 — JavaScript II / Git & GitHub vertiefen
+- [x] [Woche 6 — Git/GitHub + Tailwind CSS: Landing-Page online](docs/woche-05-javascript.md)
+- [ ] Woche 7 — Astro (mehrseitige Seite, Deployment)
 - [ ] Woche 7 — Astro (mehrseitige Seite, Deployment)
 - [ ] Woche 8 — WordPress-Grundlagen
 - [ ] Woche 9 — Theme + Page-Builder (Bricks/Elementor)
